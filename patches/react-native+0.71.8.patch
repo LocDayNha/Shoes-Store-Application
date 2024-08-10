@@ -1,0 +1,21 @@
+diff --git a/node_modules/react-native/index.js b/node_modules/react-native/index.js
+index f556fa3..cca3f34 100644
+--- a/node_modules/react-native/index.js
++++ b/node_modules/react-native/index.js
+@@ -442,11 +442,11 @@ module.exports = {
+   },
+   get ViewPropTypes(): $FlowFixMe {
+     console.error(
+-      'ViewPropTypes will be removed from React Native, along with all ' +
+-        'other PropTypes. We recommend that you migrate away from PropTypes ' +
+-        'and switch to a type system like TypeScript. If you need to ' +
+-        'continue using ViewPropTypes, migrate to the ' +
+-        "'deprecated-react-native-prop-types' package.",
++      // 'ViewPropTypes will be removed from React Native, along with all ' +
++      //   'other PropTypes. We recommend that you migrate away from PropTypes ' +
++      //   'and switch to a type system like TypeScript. If you need to ' +
++      //   'continue using ViewPropTypes, migrate to the ' +
++      //   "'deprecated-react-native-prop-types' package.",
+     );
+     return require('deprecated-react-native-prop-types').ViewPropTypes;
+   },
